@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double num1, num2, num3;
+
+            Console.Write("Digite o Primeiro Número: ");
+            num1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite o Segundo Número: ");
+            num2 = double.Parse(Console.ReadLine());
+            Console.Write("Digite o Terceiro Número: ");
+            num3 = double.Parse(Console.ReadLine());
+            //1,2,3
+            if (num1 < num2 && num1 < num3 && num2 < num3) {
+
+                Console.WriteLine("{0},{1},{2}",num1,num2,num3);
+            }
+            //2,1,3
+            if (num2 < num1 && num2 < num3 && num1 < num3)
+            {
+
+                Console.WriteLine("{0},{1},{2}", num2, num1, num3);
+            }
+            //3,2,1
+            if (num3 < num2 && num3 < num1 && num2 < num1)
+            {
+
+                Console.WriteLine("{0},{1},{2}", num3, num2, num1);
+            }
+
+            //1,3,2
+
+            if (num1 < num3 && num1 < num2 && num3 < num2) {
+
+                Console.WriteLine("{0},{1},{2}", num1, num3, num2);
+            }
+
+            // 3,1,2
+
+            if (num3 < num1 && num3 < num2 && num1 < num2) {
+                Console.WriteLine("{0},{1},{2}", num3, num1, num2);
+            }
+
+            //2,3,1
+            if (num2 < num3 && num2 < num1 && num3 < num1)
+            {
+                Console.WriteLine("{0},{1},{2}", num2, num3, num1);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+

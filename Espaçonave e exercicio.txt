@@ -1,0 +1,31 @@
+Classe Espaconave em C#
+
+public class Espaconave
+
+{
+	private string nome;
+	private int velocidade;
+	private int potencia_tiro;
+	private int velocidade_tiro;
+	private int escudo;
+	private int energia;
+
+	Public Espaconave ()
+	{
+		energia = 50;
+		velocidade = 5;
+		velocidade_tiro = 5;			
+	}
+
+	Public void mover (int direcao)
+	{
+		//move a espaconave na direcao especificado
+	}
+
+	Public void Atirar ()
+	{
+		//cria um tiro
+	}
+
+}
+
