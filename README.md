@@ -1,2 +1,2 @@
-# Java
-Atividades e estudos em Java para estudo
+# C#
+Atividades e estudos em C# para estudo
